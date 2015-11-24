@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1 class ="header" > Table of Contents </h1>	
+	<div class = "contents">
+			<div class = "lesson-unit">
+				<a href = "#lesson1"> Lesson 3.1: Introduction to Abstraction</a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson2"> Lesson 3.2: Use Functions </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson3"> Lesson 3.3: Use Classes </a>
+			</div>
+
+
+			<div class = "lesson-unit">
+				<a href = "#lesson3"> Lesson 3.4: Make Classes </a>
+			</div>
+
+	</div>
+
+<hr>
+
+	<h1 class = "header" >Important Concepts</h1>
+	<div class = "lesson">
+		<h2 id = "lesson1">Lesson 3.1: Introduction to Abstraction </h2>
+	      	<div class = "concept-description">
+	        <p> 
+	        	Utilizing the concept of abstraction, by using classes and functions inside of 
+				your programs, can greatly reduce repetition of code.
+	        </p>
+	    	</div>
+
+<hr>
+
+		<h2 id = "lesson2">Lesson 3.2: Use Functions </h2>
+	      	<div class = "concept-description">
+	        <p> 
+	        	Functions can be called, or executed, multiple times within code. This eliminates repetitive, and redundant blocks of code.
+	        </p>
+	    	</div>
+
+<hr>
+
+		<h2 id = "lesson3">Lesson 3.3: Use Classes </h2>
+	      	<div class = "concept-description">
+	        <p> 
+	        	<ol> 
+	        		<li> Class: </li>
+	        		<ul> 
+	        			<li> Blueprint of an object containing certain pieces of information about the object.</li>
+	        			<li> Blueprint can be used to create multiple different instances of an object.</li>
+	        		</ul>	
+	        		
+	        		<li> Instance </li>
+	        		<ul>
+	        			<li> Refers to a specific class.
+	        		</ul>
+
+	        	</ol>
+	        </p>
+	    	</div>
+
+<hr>
+
+		<h2 id = "lesson4">Lesson 3.4: Make Classes </h2>
+	      	<div class = "concept-description">
+	        <p> 
+	        	<ol> 
+	        		<li> Constructors: </li>
+	        		<ul> 
+	        			<li> __init__ function </li>
+	        			<li> __init__ creates space in memory to remember details about a class. </li>
+	        			<li> Takes argument self, and other user-defined variables. </li>
+	        			<li> Initializes variables, also known as instance variables, associated with the class in which it is contained. </li>
+	        		</ul>	
+	        		
+	        		<li> Self </li>
+	        		<ul>
+	        			<li> Object being created. </li>
+	        			<li> Not a Python keyword, but it is a convention used by most Python programmers. </li>
+	        		</ul>
+	        		<li> Instance Method </li>
+	        		<ul>
+	        			<li> Function defined inside class and associated with an instance </li>
+	        		</ul>
+
+	        	</ol>
+	        </p>
+	    	</div>
+
+	</div>
+
+
+
+</body>
+
+{% endblock %}

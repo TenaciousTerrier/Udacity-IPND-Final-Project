@@ -1,0 +1,165 @@
+body {
+  font-family: Calibri;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+	text-align:center;
+	font-size: 1.8em;
+}
+
+a {
+	color : #1199c3;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+.row {
+	width : 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header,
+
+.footer {
+	background-color: black;
+	color: red;
+}
+
+.footer {
+	padding: 10px 10px 10px 10px;
+}
+
+.top-image {
+	width : 10%;
+	float: left;
+	margin : 10px 5px;
+}
+
+.bottom-image {
+	width : 20%;
+	height: 20%;
+	float: center;
+	margin : 10px 5px;
+}
+
+.header h1,
+
+.footer {
+	display: block;
+	width : 100%;
+	text-align: center;
+	color: white;
+}
+
+.nav-list {
+	width:100%;
+	list-style-type:none;
+	text-align: center;
+	padding : 0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.nav-item a {
+	display: block;
+	padding: 0.5em 1em;
+	font-size : 1.0em;
+	color : red;
+}
+
+.nav-item a:hover {
+	color: white;
+}
+
+.error {
+	color: #CD0E3E;
+	font-size: smaller;
+}
+
+.nav-list {
+	text-align: left;
+	float: right;
+	width: 100%;
+}
+.nav-item {
+	display: inline-block;
+	color: red;
+}
+.nav-item-left {
+	float: left;
+}
+.nav-item-right {
+	float: right;
+}
+
+.page,
+.page ul,
+.page ol {
+	padding-left: 0.4em;
+	width: 100%;
+}
+
+.button {
+  display: inline-block; 
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button-primary {
+  border-color: #c7640b;
+  background-color: black; 
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  border-color: red;
+  background-image: -webkit-linear-gradient(#333333,#262626 20%,#0d0d0d);
+}
+
+.button-secondary {
+  color: red;
+  background-image: -webkit-linear-gradient(#333333,#262626 20%,#0d0d0d);
+}
+
+.button-secondary:hover {
+  color: white;
+}
+
+.comment-form {
+	font-size : 1.0em;
+}
+.comment-form input,
+.commment-form textarea {
+	margin-bottom: 10px;
+	min-height: 35px;
+	font-size: 0.8em;
+}
+
+
+
+

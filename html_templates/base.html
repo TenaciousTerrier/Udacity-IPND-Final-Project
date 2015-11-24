@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+	<head>
+		<title>Thomas Hepner Project</title>
+		<link rel="icon" type="image/png" href="/images/favicon.ico">
+		<link rel="stylesheet" href="/stylesheets/skin.css">
+
+	</head>
+
+	<body>
+
+		<div class="row header">
+			{% if page_name == "home" %}
+			<div class="page">
+				<img class="top-image" src="/images/me.jpg" alt="photo of Thomas">
+				<h1> Intro to Programming Nanodegree : Course Project</h1>
+			</div>
+			{% endif %}
+			<ul class="nav-list">
+				<li class="nav-item nav-item-left"><a id="home" href="/">Home</a></li>
+				{% for p in pages %}
+				<li class="nav-item nav-item-right"><a href="/{{ p.href }}">{{ p.nav_title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+
+
+		{% block content %}
+		{% endblock %}
+
+		<div class="row footer">
+			<h3>Thomas Hepner: Intro to Programming Nanodegree</h3>
+			<form action="https://www.udacity.com/course/nd000">
+				<button class="button button-primary"><img class="bottom-image" src="/images/Udacity.png" alt="Udacity Logo"></button>
+			</form>
+
+		</div>
+	</body>
+
+</html>
+{% endautoescape %}

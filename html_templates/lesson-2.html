@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1 class ="header" > Table of Contents </h1>	
+	<div class = "contents">
+			<div class = "lesson-unit">
+				<a href = "#lesson1"> Lesson 2.1: Introduction to Serious Programming</a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson2"> Lesson 2.2: Variables and Strings </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson3"> Lesson 2.3: Input -> Function -> Output </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson4"> Lesson 2.4: Control Flow and Loops: If and While </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson5"> Lesson 2.5: Debugging </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson6"> Lesson 2.6: Structured Data: Lists and For Loops </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson7"> Lesson 2.7: How to Solve Problems </a>
+			</div>
+
+	</div>
+
+<hr>
+
+	<h1 class = "header" >Important Concepts</h1>
+	<div class = "lesson">
+		<h2 id = "lesson1">Lesson 2.1: The Basics of the Web and HTML </h2>
+	      	<div class = "concept-description">
+	        <p> 
+	        	<ul>
+	        		<li> Programming: The core of computer science. </li>
+	        		<li> Computer: Machine that can execute programs. With the right program, a computer can do any mechanical computation imaginable. </li>
+	        		<li> Program: A precise sequence of steps. Since the computer is just a machine, the program must give the steps in a way that can be executed mechanically. </li>
+	        		<li> Programming Language: </li>
+	        		<li> Python: A programming language; Programs written in the Python language will be input to the Python interpreter, which is a program that runs on the computer. The interpreter reads programs and executes them by following the rules of the Python language. </li>
+	        		<li> Grammar: Compared to natural languages, programming languages adhere to a strict grammatical structures. 
+	        	</ul>
+	        </p>
+	    	</div>
+
+<hr>
+
+		<h2 id = "lesson2">Lesson 2.2: Variables and Strings </h2>
+			<div class = "concept-description">
+			    <p> 
+			        <ul>
+			        	<li> Variable: a name that refers to a value.  In Python, a variable name can consist of any sequence of letters, numbers, and underscores as long as it does not start with a number.</li>
+			        	<li> String: a sequence of characters surrounded by quotes, either single or double.</li>
+			        </ul>
+			    </p>
+			</div>
+
+<hr>
+
+		<h2 id = "lesson3">Lesson 2.3: Input -> Function -> Output </h2>
+			<div class = "concept-description">
+			    <p> 
+			        <ul>
+			        	<li> Function: Takes an input, does something with it, and then returns an output. </li>
+			        </ul>
+			    </p>
+			</div>
+
+<hr>
+
+		<h2 id = "lesson4">Lesson 2.4: Control Flow and Loops: If and While </h2>
+			<div class = "concept-description">
+			    <p> Comparison Operators return boolean value 'True' when correct, and 'False' otherwise. Examples are listed below:
+			        <ul> 
+			        	<li> == </li>
+			        	<li> != </li>
+			        	<li> > </li>
+			        	<li> < </li>
+			        	<li> >= </li>
+			        	<li> <= </li>
+			        </ul>
+			    </p>
+			</div>
+
+<hr>
+
+		<h2 id = "lesson5">Lesson 2.5: Debugging </h2>
+			<div class = "concept-description">
+			    <p> 
+			        <ul> 
+			        	<li> Examine error messages </li>
+			        	<li> Start with a working example </li>
+			        	<li> Make sure your code works on examples, or test case </li>
+			        	<li> Check intermediate results </li>
+			        	<li> Keep and compare old version </li>
+			        </ul>
+			    </p>
+			</div>
+
+<hr>
+
+		<h2 id = "lesson6">Lesson 2.6: Structured Data: Lists and For Loops </h2>
+			<div class = "concept-description">
+			    <p> 
+			        <ol> 
+			        	<li> Lists: Sequence of anything (integers, doubles, strings, etc.) </li>
+			        	<li> For Loops: Iterate over items of any sequence in the order of the sequence </li>
+			        </ol>
+			    </p>
+			</div>
+
+<hr>
+
+		<h2 id = "lesson7">Lesson 2.7: How to Solve Problems </h2>
+			<div class = "concept-description">
+			    <p> 
+			    	In order to solve a problem, the first thing you need to do is understand the problem.
+			    	To understand the problem, you need to understand (1) the inputs, and (2) the outputs. 
+			    	Then, you can create and write functions to produce the output and solve the problem.
+			    </p>
+			</div>
+
+<hr>
+
+</body>
+
+{% endblock %}

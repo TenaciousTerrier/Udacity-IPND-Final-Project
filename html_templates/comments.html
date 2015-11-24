@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+
+<h1 class="header">Leave a Comment!</h1>
+
+<div class="page">
+	<form class="comment-form" action="/comments" method="post">
+		<label for="name"><b>User Name:</b></label>
+		<br>
+		{% if name_error %}
+			<span class="error">{{ name_error }}</span>
+			<br>
+		{% endif %}
+		<input type="text" name="name" id="name" value="{{name}}" placeholder="Insert your name here" cols = "20" rows = "1"></input>
+		<br>
+
+		<label for="description"><b>Comment:</b></label>
+		<br>
+		{% if description_error %}
+			<span class="error">{{ description_error }}</span>
+			<br>
+		{% endif %}
+		<textarea value="{{description}}" placeholder="Insert your comment here" name="description" id="description" maxlength="350" cols="50" rows="3" required ></textarea>
+		
+		<br>
+		<input id="leave-comment" class="button button-secondary" type="submit" value="Post Comment">
+	</form>
+	<hr>
+	<h1 class="header">Comments Wall:</h1>
+
+{% for post in comment_library %}
+<div class="lesson">
+	<div class = "concept">
+		<div class="content">
+			<div class="comment">
+				<b> {{post.name}} </b> wrote:<br>
+				<blockquote> {{post.description}} </blockquote>
+			</div>
+		</div>		
+	</div>
+</div>
+
+{% endfor %}
+<hr>
+
+</div>
+
+
+{% endblock %}

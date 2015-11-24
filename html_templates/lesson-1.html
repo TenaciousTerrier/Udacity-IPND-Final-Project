@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1 class ="header" > Table of Contents </h1>	
+	<div class = "contents">
+			<div class = "lesson-unit">
+			<a href = "#lesson1"> Lesson 1.1: The Basics of the Web and HTML</a>
+			<ul> 
+				<li><a href = "#lesson1a"> The Web </a></li>
+				<li><a href = "#lesson1b"> HTML </a></li>
+				<li><a href = "#lesson1c"> Tags and Elements </a></li>
+				<li><a href = "#lesson1d"> Are Computers "Stupid"? </a></li>
+				<li><a href = "#lesson1e"> Inline and Block Elements </a></li>
+			</ul>
+			</div>
+
+			<div class = "lesson-unit">
+			<a href = "#lesson2"> Lesson 1.2: Creating a Structured Document with HTML </a>
+
+			<ul> 
+				<li><a href = "#lesson2a"> Developer Tools </a></li>
+				<li><a href = "#lesson2b"> HTML Structure </a></li>
+				<li><a href = "#lesson2c"> Indentations and Boxes </a></li>
+				<li><a href = "#lesson2d"> Text Editors </a></li>
+			</ul>
+			</div>
+
+			<div class = "lesson-unit">
+			<a href = "#lesson3"> Lesson 1.3: Adding CSS Style and HTML Structure </a>
+
+			<ul> 
+				<li><a href = "#lesson3a"> Repetition is the Bane of a Programmer's Existence</a></li>
+				<li><a href = "#lesson3b"> CSS </a></li>
+
+			</ul>
+			</div>
+
+	</div>
+
+<hr>
+
+	<h1 class = "header" >Important Concepts</h1>
+	<div class = "lesson">
+		<h2 id = "lesson1">Lesson 1.1: The Basics of the Web and HTML </h2>
+
+		
+		<div class="concept" id = "lesson1a">
+	    	<div class = "concept-title"><u> The World Wide Web: </u></div>
+	      	<div class = "concept-description">
+	        <p> 
+	        	The web is a network of computers that communicate with each other. When a user enters a URL like "www.facebook.com" or "www.amazon.com" into a web browser, an HTTP request is sent from their computer to a server.The server takes the URL as an address and retrieves the corresponding HTML document which is rendered via the user's web browser and displayed on the computer screen. You can find more information here: 
+	        	<a href = "https://en.wikipedia.org/wiki/World_Wide_Web"> World Wide Web, Wikipedia </a>
+	        </p>
+	    	</div>
+	    </div>
+
+		<div class = "concept" id="lesson1b">
+	    	<div class = "concept-title"><u> HTML: Hypertext Markup Language: </u></div>
+	      	<div class = "concept-description">
+	        <p> 
+	        	HTML is an abbreviation for "Hypertext Markup Language". Most content on the web is made up of HTML documents which can contain text, video, music, and many other file types. HTML files contain text content and markup. Text content describes what is shown on your computer screen, and markup determines how it is presented or visualized. More information can be found here: 
+	        	<a href = "https://en.wikipedia.org/wiki/HTML"> HTML, Wikipedia</a>
+	        </p>
+	        </div>
+		</div>	
+
+		<div class="concept" id="lesson1c">
+	    	<div class="concept-title"><u> Tags and Elements: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	Elements and tags are what make up HTML documents. Elements define individual components of an HTML document, and tags define each element's <i>type</i>. 
+	        </p>
+	        </div>
+		</div>	
+
+		<div class="concept" id="lesson1d">
+	    	<div class="concept-title"><u> Are Computers "Stupid"? </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	Computers aren't actually "stupid", but they do take provided instructions literally. Even a small mistake in the computers instuctions, or code, oftentimes causes massive errors, even causing the failure of the entire set of instructions.
+	        </p>
+	        </div>
+		</div>	
+
+		<div class="concept" id="lesson1e">
+	    	<div class="concept-title"><u> Inline and Block Elements: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	HTML elements can be either <i>inline</i> or <i>block</i> elements. Block elements place invisible rectangles around their content whereas inline elements do not, and are not separated by other elements.
+	        </p>
+	        </div>
+		</div>	
+	<!--</div>-->
+
+<hr>
+
+		<h2 id = "lesson2"> Lesson 1.2: Creating a Structured Document with HTML </h2>
+		
+		<div class="concept" id="lesson2a">
+	    	<div class="concept-title"><u> Developer Tools: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	Within web browsers, one can acccess <i>Developer Tools</i>. This toolkit allows a programmer to view and edit the HTML and CSS code underlying the web page. In Google Chrome (my favorite web browser!), one can access the Developer Tools by clicking on the icon shown in the black box in the picture below and toggling to <i> Developer tools </i>.
+	        </p>
+	   		</div>
+	        <div class="image"><img src = "images/Settings2.png" alt = "Developer tools"></div> 
+	    </div>
+
+		<div class="concept" id="lesson2b">
+	    	<div class="concept-title"><u> HTML Structure: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	HTML possesses a "tree-like" structure. What does this mean? It means that HTML elements can contain other HTML elements. A good analogy is to think of a human nuclear family; parents have children. In HTML, the children would be child elements to the parents, who would be parent elements.
+	        </p>
+	    	</div>
+	    </div>
+
+		<div class="concept" id="lesson2c">
+	    	<div class="concept-title"><u> Boxes and Indentation: </u></div>
+	      	<div class="concept-description">
+	        <p> 
+	        	Boxes and indentation are used to structure HTML documents. Indentation is used inside of block elements, and boxes are used create the structure of the web page.
+	        </p>
+	    	</div>
+	    </div>
+
+		<div class="concept" id="lesson2d">
+	    	<div class="concept-title"><u> Text Editors: </u></div>
+	      	<div class="concept-description">
+	        <p> 
+	        	Programmers use text editors to assist with writing code. In this course, three text editors have been introduced: Scrathpad, CodePen, and Sublime Text. Sublime Text is the most difficult to use, but also has the most functionality. For this assignment, I created my HTML and CSS documents with the Sublime Text editor. 
+	        </p>
+	    	</div>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson3"> Lesson 1.3: Adding CSS Style and HTML Structure</h2>
+		
+		<div class="concept" id="lesson3a">
+	    	<div class="concept-title"><u> Avoid Repetition Whenever Possible: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	Avoiding repetition and eliminating redundancy as much as possible is critical to being an effective programmer. There are two main reasons for this: 
+	        </p>
+
+	        <p><u><b> Preventing Mistakes </b></u>
+	        	Repeating oneself lends to making mistakes. The more you copy and paste or rewrite the same code, the more likely you are to make a mistake that prevents you from achieving your programming goals. The less you repeat yourself, the less errors you are likely to make. 
+	        </p>
+
+	        <p><u><b> Being Consistent </b></u>
+	        Consistency does a few things. Firstly, it helps your mind check your code and more easily spot errors. Secondly, it enables quick editing and make quick changes to style.
+	    	</p>
+
+	    	</div>
+	    </div>
+
+		<div class="concept" id="lesson3b">
+	    	<div class="concept-title"><u> CSS: </u></div>
+	      	<div class="concept-description">
+	        <p>
+	        	CSS is an abbreviation for <i> Cascading Style Sheets</i> controls the style of an HTML document, or how is displayed in a web browser. To modify the style of an HTML document, similar HTML elements are assigned the identical class names, and a style is specified to that class, ensuring that all of these elements have the same style. 
+	        </p>
+	        
+	    	</div>
+		</div>
+	</div>
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<h1 class ="header" > Table of Contents </h1>	
+	<div class = "contents">
+			<div class = "lesson-unit">
+				<a href = "#lesson1"> Lesson 4.1: Introduction to Networks </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson2"> Lesson 4.2: Make the Internet Work for You </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson3"> Lesson 4.3: Forms </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson4"> Lesson 4.4: Python Break-Modulus and Dictionaries </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson5"> Lesson 4.5: Working with App Engine </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson6"> Lesson 4.6: Validation </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson7"> Lesson 4.7: HTML Templates </a>
+			</div>
+
+			<div class = "lesson-unit">
+				<a href = "#lesson8"> Lesson 4.8: Databases </a>
+			</div>
+
+	</div>
+
+<hr>
+
+	<h1 class = "header" >Important Concepts</h1>
+	
+	<div class = "lesson">
+		<h2 id = "lesson1">Lesson 4.1: Introduction to Networks </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	The internet is a network. A network is a group of entities that can communicate even though they are not all directly connected. Networks are measured with latency and bandwidth.
+
+	    	<ul>
+	    		<li> Latency: Time it takes for a message to get from its source to its destination. It is measured in time (milliseconds). </li>
+	    		<li> Bandwidth: Amount of information that can be transmitted per unit time (Mbps). </li>
+	    		<li> Bit: 1 bit = smallest unit of information. </li>
+	    		<li> Protocol: A set of rules that people agree to that defines how two entities, a client and a server, can talk to one another. Hypertext Transfer Protocol, or HTTP, is the protocol for the client and the server. </li>
+	    	</ul>
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson2">Lesson 4.2: Make the Internet Work for You </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	<li> Uniform Resource Locator (URL): A combination of the protocol, the host, and the path. For instance, in 'http://www.udacity.com/cs253', http is the protocol, www.udacity.com is the host, and cs253 is the path.</li>
+	    	<br>
+	    	<li> Query Paramters: Seen after the path in the URL. Multiple query parameters can exist after the path separated by '&amp;' characters. The query parameters send additional information to the server. </li>
+	    	<br> 
+	    	<li> Cache: Something that stores data so you don't have to retrieve it later. Caches are used to make data requests faster. </li>
+	    	<br> 
+	    	<li> Fragment: Added to the URL after the path. Fragments are separated by '#' symbols. The fragment is not sent to the server, it exists solely in the browser. When there are query parameters, fragments follow query parameters. </li>
+	    	<br>
+	    	<li> Port: Necessary to retrieve data from a server. </li>
+	    	<li> Requests: A request line has 3 main parts: a method, a path, and a version. Popular methods are 'GET' and 'POST'. </li>
+	    	<li> Server: A computer that interacts with a request we make to the computer. </li>
+
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson3">Lesson 4.3: Forms </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	Forms allow users to interact with web pages. Form, including textboxes, checkboxes, radio buttons, and many others, allow users to send data to the server. 
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson4">Lesson 4.4: Python Break-Modulus &amp; Dictionaries </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	<ol>
+	    		<li> The Modulus Operator: This is an operator (like +, -, *, or /) that every programming language has. </li>
+	    		<li> Dictionaries: This is a data structure, similar to a Python List. </li>
+	    	</ol>
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson5">Lesson 4.5: Working with App Engine </h2>
+	    <div class = "concept-description">
+	    <p> GET and POST are the two most popular methods used to talk to servers. Here are the main differences between them.
+	    	<br>
+	    	GET:
+	    	<ul>
+	    		<li> Parameters in URL. </li>
+	    		<li> Used for fetching documents. </li>
+	    		<li> Maximum URL length. </li>
+	    		<li> Ok to cache. </li>
+	    		<li> Shouldn't change the server. </li>
+	    	</ul>
+	    	<br>
+	    	POST:
+	    	<ul>
+	    		<li> Parameters in body. </li>
+	    		<li> Used for updating data. </li>
+	    		<li> No max length. </li>
+	    		<li> Not ok to cache. </li>
+	    		<li> Ok to change the server. </li>
+	    	</ul>
+
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson6">Lesson 4.6: Input Validation </h2>
+	    <div class = "concept-description">
+	    <p> <b>Validation means verifying on the server side that what we receive is what we expected to receive. </b>
+	    	<br>
+	    	<ul>
+	    	<li> Input Validation: </li>
+	    		<ol>
+	    			<li> Verify the user's input. </li>
+	    			<li> On error, render form again. </li>
+	    			<li> Include error message. </li>
+	    		</ol>
+	    	<br>
+	    	<li> String Substitution: Used to replace parts of strings with other text. This can be done in Python with the modulus '%' operator. </li>
+	    	<br>
+	    	<li> HTML Escaping: HTML allows you to change certain characters so that when the user types them in, the server shows them. They are: </li>
+	    		<ul>
+	    			<li> &quot; : &amp;quot;  </li>
+	    			<li> &gt; : &amp;gt; </li>
+	    			<li> &lt; : &amp;lt; </li>
+	    			<li> &amp; : &amp;amp;  </li>
+	    		</ul>
+	    		<br>
+	    	<li> Redirection </li>
+	    		<ul>
+	    			<li> Can't share success link. </li>
+	    			<li> Can't reload the page without annoying message </li>
+	    		</ul>
+
+	    	</ul>
+	    	<b>Validation is important for both site security and user experience. </b>
+	    	<ul>
+	    		<li>Site Security: It is important to not leave your website open to attack. Handling HTML escaping is critical to this because failing to do so allows users to modify your website! </li>
+	    		<li>User Experience: The user might not be able to understand why the server is not accepting their POST request, or the server might allow the user to enter false data. </li>
+	    		<li> Possible Consequences of Failing to Validate User Input: 
+	    			<ul>
+	    				<li> Website vulnerable to hackers and other malcontents. </li>
+	    				<li> Poor user experience. </li>
+	    			</ul>
+
+
+	    		</li>
+
+	    	</ul>
+	    	<b> Servers handle requests and deliver responses by: </b>
+	    	<ol>
+	    		<li> The user makes a GET request for the form. </li>
+	    		<li> Server responds with form data. </li>
+	    		<li> The user then makes a POST request to the server with the data.</li>
+	    		<li> The server will then validate the request and either accept the data or not. If there is an error, and the server does not validate the request, the server will send a form request back to the user with an error message. The user can then send another POST request back to the server. </li>
+
+	    	</ol>
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson7">Lesson 4.7: HTML Templates </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	<b> Templates generally refer to a library. A template library is a library to build complicated strings, typically HTML. </b>
+
+	    	<ul> 
+	    		<li> Variable Substitution: &#123;{ variable }}  </li>
+	    		<li> Statement Syntax: </li>
+					&#123;% statement %&#125;
+					<br> output				  
+					<br> &#123;% end statement %&#125;
+					<br>
+				<li> For Loop Syntax: </li>
+					&#123;% for statement %&#125;
+					<br>	body
+					<br> &#123;% endfor %&#125;
+					<br>
+				<li> Helpful Hints: </li>
+					<ul> 
+						<li> Always automically escape variables when possible. </li>
+						<li> Minimize code in templates. </li>
+						<li> Minimize html in code. </li>
+					</ul>
+				<li> Templates: </li>
+					<ul>
+						<li> Separate different types of code (Ex: HTML vs. Python) </li>
+						<li> Make more readable code. </li>
+						<li> Make more secure websites. </li>
+						<li> HTML that is easier to modify. </li>
+					</ul>
+
+	    	</ul>
+	    	<b> The Importance of Avoiding Repetition: </b>
+	    		<li> Makes your code less prone to errors. </li>
+	    		<li> Easier to fix and modify code. </li>
+	    		<li> Code is consistent so changes are applied universally. </li>
+	    		<li> Using HTML templates when creating a website is an important tool to use in order to avoid repetition. </li>
+	    </p>
+	    </div>
+
+<hr>
+
+		<h2 id = "lesson8">Lesson 4.8: Databases </h2>
+	    <div class = "concept-description">
+	    <p> 
+	    	<ul> 
+	    		<li> What is a database?: A program that stores and retrieves data, usually large amounts of structured data. Many servers are used specifically for databases.</li>
+	    		<li> Why databases?: Many downsides of query data by hand. Databases exists to take large amounts of data and run queries on them in reasonable periods of time. </li>
+	    		<ul> 
+	    			<li> Error-prone. </li>
+	    			<li> Tedious. </li>
+	    			<li> Slow. </li>
+	    		</ul>
+
+	    		<li> Relational Databases: Typically use Structured Query Language (SQL) to query them. A few of these are PostgreSQL, MySQL, SQLite, Oracle, and others. MySQL is the most popular database by far, and is owned by Oracle, but is still free and open for the most part. </li>
+
+	    		<li> SQL: </li> 
+	    			<ul> 
+	    				<li> Invented in the 1970s before the internet, the web, or web applications existed. </li>
+	    				<li> SQL is fairly readable, simple language. </li>
+	    				<li> Typical SQL query uses 'SELECT', 'FROM', and 'WHERE' statements. 'SELECT' fetches data, 'FROM' identifies the table we are using, and 'WHERE' puts constraints on the data we are fetching. </li>
+	    			</ul>
+
+	    		<li> ACID: </li>
+	    			<ul> 
+	    				<li> A - Atomicity: All parts of a transaction succeed or fail together.  
+	    				<li> C - Consistency: The database will always be consistent. </li>
+	    				<li> I - Isolation: No transaction can interfere with others. </li> 
+	    				<li> D - Durability: Once the transaction is committed, it won't be lost. </li> 
+	    			</ul>
+	    	
+	    		<li> Google App Engine Datastore: </li>
+	    			<ul>
+	    				<li> Tables -> Entities (columns are not fixed, all have an ID, parents/ancestors) </li>
+	    			</ul>
+	    	</ul>
+
+	    </p>
+	    </div>
+
+
+	</div>
+
+</body>
+
+{% endblock %}
